@@ -1,0 +1,152 @@
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body { 
+    font-size: 16px;
+    
+    font-family: 'Sanchez', Arial, Helvetica, sans-serif;
+
+    color: rgb(64, 63, 63);
+    background-color: rgb(154, 165, 108);
+    background-image: url(../images/white-paper-texture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+header { 
+    background-color: rgb(54, 108, 74, 0.9); 
+    position: sticky; 
+    top: 0;
+    }
+
+header > h1 { color: beige; text-align: center; padding: 8px; }
+header > img {
+    height: 80px;
+    margin: auto;
+    padding-bottom: 10px;
+    display: block;
+    
+  }
+
+article { 
+    width: 25%; 
+    border: 4px solid; 
+    border-radius: 9px; 
+    
+    position: relative;
+    display: inline-block;
+    margin: 30px 15px;
+
+    text-align: left;
+        
+    
+}
+
+main { text-align: center; }
+
+article > h2 { color: gray;  padding: 5px 10px; }
+
+article:first-of-type { border: 4px solid gray; }
+
+#inprogress { border: 4px solid rgb(80, 67, 67); }
+#inprogress h2 { color: rgb(80, 67, 67); }
+
+#done { border: 4px solid olive; }
+#done h2 { color: olive; }
+
+ul { list-style-type: none; }
+
+ul li { padding: 20px 10px; }
+
+.todo li:nth-child(odd) { background-color: rgba(97, 97, 97, 0.3)}
+ 
+.inprogress li:nth-child(odd) { background-color: rgba(175, 53, 53, 0.5)}
+
+.done li:nth-child(odd) { background-color: rgba(128, 128, 0, 0.5)}
+
+#done50 {
+   margin-top: 15px;
+    margin-left: 10px;
+}
+
+#check1 input[type="checkbox"]:checked + span::after {
+    content :'\2665';
+    width: 25px;
+    height: 25px;
+    padding: 4px;
+    border-radius: 50%;
+    background-color: rgb(223, 151, 233);
+    border: 2px solid rgb(105, 165, 105);
+    font-size: 2em;
+    position: absolute;
+    top: 55px;
+    right: 8px;
+    
+    animation: fadeIn 0.5s;
+    }
+
+    #check2 input[type="checkbox"]:checked + span::after {
+        content :'\273F';
+        width: 25px;
+        height: 25px;
+        padding: 4px;
+        border-radius: 50%;
+        background-color: rgb(223, 151, 233);
+        border: 2px solid rgb(105, 165, 105);
+        font-size: 2em;
+        position: absolute;
+        top: 115px;
+       right: 8px;
+        
+        animation: fadeIn 0.5s;
+        }
+
+        #check3 input[type="checkbox"]:checked + span::after {
+            content :'\266B';
+            width: 25px;
+            height: 25px;
+            padding: 4px;
+            border-radius: 50%;
+            background-color: rgb(223, 151, 233);
+            border: 2px solid rgb(105, 165, 105);
+            font-size: 2em;
+            position: absolute;
+            top: 175px;
+           right: 8px;
+            
+            animation: fadeIn 0.5s;
+            }
+            #check4 input[type="checkbox"]:checked + span::after {
+                content :'\2665';
+                width: 25px;
+                height: 25px;
+                padding: 4px;
+                border-radius: 50%;
+                background-color: rgb(223, 151, 233);
+                border: 2px solid rgb(105, 165, 105);
+                font-size: 2em;
+                position: absolute;
+                top: 235px;
+               right: 8px;
+                
+                animation: fadeIn 0.5s;
+                }
+    @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+        }
+
+aside {
+    font-size: 3em; 
+    text-align: center; 
+  
+    margin: 70px ;
+    font-weight: bold;
+    }
+
+
